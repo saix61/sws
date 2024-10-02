@@ -495,7 +495,7 @@ header nav {
   position: absolute;
   left: 60%;
   bottom: -100px;
-  height: 70%;
+  height: 340px;
   width: 60%;
   background: url(../images/item.svg);
   animation: backgroundAnimation 20s linear infinite;
@@ -504,12 +504,11 @@ header nav {
 
 @media (max-width: 768px) {
   .big-picture:before {
-    top: -30px;
     left: -16px;
     right: -16px;
     bottom: -30px;
     width: auto;
-    height: auto;
+    height: 200px;
   }
 }
 
@@ -797,28 +796,38 @@ header nav {
 .footer_row {
   height: 48px;
   background: url(../images/item.svg);
-  animation: backgroundAnimation 20s linear infinite;
+  animation: backgroundAnimation 45s linear infinite;
 }
 
 .footer_row:nth-child(2n) {
-  animation: backgroundAnimationReverse 25s linear infinite;
+  animation: backgroundAnimationReverse 40s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .footer_row {
+    animation-duration: 15s;
+  }
+
+  .footer_row:nth-child(2n) {
+    animation-duration: 10s;
+  }
 }
 
 @keyframes backgroundAnimation {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% bottom;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: 100% bottom;
   }
 }
 
 @keyframes backgroundAnimationReverse {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% bottom;
   }
   100% {
-    background-position: -100% 50%;
+    background-position: -100% bottom;
   }
 }
 
