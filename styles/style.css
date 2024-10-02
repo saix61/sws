@@ -118,6 +118,11 @@ body {
   z-index: 0;
 }
 
+.button._small {
+  height: 42px;
+  width: 200px;
+}
+
 .button:hover {
   color: #457ae5;
   -webkit-transition: 0.15s;
@@ -967,6 +972,10 @@ header nav {
   .split li:before {
     top: 7px;
   }
+}
+
+.split .button:not(:first-child) {
+  margin-top: 40px;
 }
 
 .split__item:not(:last-child) {
