@@ -2,8 +2,8 @@ jQuery(document).ready(function () {
     // preload
     // jQuery(".preloader").hide();
     setTimeout(function () {
-        jQuery(".preloader").fadeOut(500);
-    }, 1500);
+        jQuery(".preloader").fadeOut(300);
+    }, 1000);
     // scroll
     function scroll_fn() {
         var new_scroll = jQuery(window).scrollTop();
